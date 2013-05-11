@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace SilverForge.CeasarCipher.Core
 {
-	
+
 	public class Encoder : IEncoder
 	{
 		public string Execute(string text, string key)
@@ -16,13 +13,13 @@ namespace SilverForge.CeasarCipher.Core
 			if (string.IsNullOrEmpty(key))
 				throw new ArgumentNullException("key", "Key is not defined!");
 
-			
-			var retValue = new byte[] {};
+
+			var retValue = new byte[text.Length];
 			var keyposition = 0;
 			var textBytes = Encoding.UTF8.GetBytes(text);
 			var keyBytes = Encoding.UTF8.GetBytes(key);
 
-			for(var i = 0; i < text.Length; i++)
+			for (var i = 0; i < text.Length; i++)
 			{
 				if (keyposition >= key.Length)
 					keyposition = 0;
@@ -36,7 +33,7 @@ namespace SilverForge.CeasarCipher.Core
 				keyposition++;
 			}
 
-			return Encoding.UTF8.GetChars(retValue).ToString();
+			return new string(Encoding.UTF8.GetChars(retValue));
 		}
 	}
 }

@@ -10,7 +10,7 @@ namespace SilverForge.CeasarCipher.Core
 	{
 		public string Execute(string text, string key)
 		{
-			
+			return string.Empty;
 		}
 	}
 }

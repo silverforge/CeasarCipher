@@ -5,6 +5,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SilverForge.CeasarCipher", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SilverForge.CeasarCipher.Core", "SilverForge.CeasarCipher.Core\SilverForge.CeasarCipher.Core.csproj", "{9CF5CD7A-F10D-49A3-9758-F1ED360E7588}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{4C91191B-F498-4773-8CE2-A4C559F955F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SilverForge.CeasarCipher.Core.Test", "SilverForge.CeasarCipher.Core.Test\SilverForge.CeasarCipher.Core.Test.csproj", "{61D008EA-34C0-4112-8D69-732A26A7DA88}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,8 +23,15 @@ Global
 		{9CF5CD7A-F10D-49A3-9758-F1ED360E7588}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9CF5CD7A-F10D-49A3-9758-F1ED360E7588}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9CF5CD7A-F10D-49A3-9758-F1ED360E7588}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61D008EA-34C0-4112-8D69-732A26A7DA88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61D008EA-34C0-4112-8D69-732A26A7DA88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61D008EA-34C0-4112-8D69-732A26A7DA88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61D008EA-34C0-4112-8D69-732A26A7DA88}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{61D008EA-34C0-4112-8D69-732A26A7DA88} = {4C91191B-F498-4773-8CE2-A4C559F955F2}
 	EndGlobalSection
 EndGlobal
