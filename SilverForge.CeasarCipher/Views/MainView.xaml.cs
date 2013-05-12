@@ -1,11 +1,9 @@
-﻿using System.Windows;
-
-namespace SilverForge.CeasarCipher.Views
+﻿namespace SilverForge.CeasarCipher.Views
 {
 	/// <summary>
 	/// Interaction logic for Main.xaml
 	/// </summary>
-	public partial class MainView : Window
+	public partial class MainView
 	{
 		public MainView()
 		{
