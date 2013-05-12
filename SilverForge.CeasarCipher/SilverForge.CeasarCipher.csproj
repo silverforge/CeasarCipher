@@ -62,6 +62,9 @@
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="WPFSmartLibraryLight35">
+      <HintPath>..\packages\WPFSmartLibraryLight35\WPFSmartLibraryLight35.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -70,7 +73,7 @@
     </ApplicationDefinition>
     <Compile Include="AppBootstrapper.cs" />
     <Compile Include="CaliburnContentLoader.cs" />
-    <Compile Include="Interfaces\IMainView.cs" />
+    <Compile Include="Interfaces\IMainViewModel.cs" />
     <Compile Include="Interfaces\IViewModel.cs" />
     <Compile Include="ViewModels\DecoderViewModel.cs" />
     <Compile Include="ViewModels\EncoderViewModel.cs" />

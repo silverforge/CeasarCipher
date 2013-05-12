@@ -7,6 +7,15 @@ namespace SilverForge.CeasarCipher.ViewModels
 	[Export]
 	public class DecoderViewModel : Screen, IViewModel
 	{
-		
+		private string _password;
+		public string Password
+		{
+			get { return _password; }
+			set
+			{
+				_password = value;
+				NotifyOfPropertyChange(() => Password);
+			}
+		}
 	}
 }
