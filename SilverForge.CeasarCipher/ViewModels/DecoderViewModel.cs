@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.Composition;
 using Caliburn.Micro;
+using SilverForge.CeasarCipher.Core;
 using SilverForge.CeasarCipher.Interfaces;
 
 namespace SilverForge.CeasarCipher.ViewModels
@@ -7,8 +8,15 @@ namespace SilverForge.CeasarCipher.ViewModels
 	[Export]
 	public class DecoderViewModel : Screen, IViewModel
 	{
+		private readonly IDecoder _decoder;
 		private string _password;
 		private string _text;
+
+		[ImportingConstructor]
+		public DecoderViewModel(IDecoder decoder)
+		{
+			_decoder = decoder;
+		}
 
 		public string Password
 		{
@@ -34,12 +42,14 @@ namespace SilverForge.CeasarCipher.ViewModels
 
 		public void Decode()
 		{
-			
+			var text = _decoder.Execute(_text, _password);
+			Text = text;
 		}
 
 		public void Reset()
 		{
-			
+			Password = string.Empty;
+			Text = string.Empty;
 		}
 	}
 }

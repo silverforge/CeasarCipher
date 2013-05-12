@@ -33,7 +33,7 @@
 		<TextBox x:Name="Text" Grid.Row="2" Grid.Column="1" Margin="12,2" Height="100" Width="500" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" TextWrapping="Wrap" AcceptsReturn="True" AcceptsTab="True" />
 
 		<StackPanel Grid.Row="3" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right" Margin="12,2">
-			<Button x:Name="Decode" Content="Encode" Margin="2" Height="30" Width="150" IsDefault="True" />
+			<Button x:Name="Encode" Content="Encode" Margin="2" Height="30" Width="150" IsDefault="True" />
 			<Button x:Name="Reset" Content="Reset" Margin="2" Height="30" Width="150" />
 		</StackPanel>
 	</Grid>

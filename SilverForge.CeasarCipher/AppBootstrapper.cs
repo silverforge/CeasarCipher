@@ -4,6 +4,7 @@ using System.ComponentModel.Composition;
 using System.ComponentModel.Composition.Hosting;
 using System.ComponentModel.Composition.Primitives;
 using System.Linq;
+using System.Reflection;
 using Caliburn.Micro;
 using SilverForge.CeasarCipher.Interfaces;
 
@@ -18,8 +19,8 @@ namespace SilverForge.CeasarCipher
 		/// </summary>
 		protected override void Configure() {
 		    var catalog = new AggregateCatalog(
-		        AssemblySource.Instance.Select(x => new AssemblyCatalog(x)).OfType<ComposablePartCatalog>()
-		        );
+						new ApplicationCatalog()
+						);
 
 			container = new CompositionContainer(catalog);
 

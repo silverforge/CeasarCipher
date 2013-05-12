@@ -1,8 +1,10 @@
-﻿using System.Text;
+﻿using System.ComponentModel.Composition;
+using System.Text;
 using CuttingEdge.Conditions;
 
 namespace SilverForge.CeasarCipher.Core
 {
+	[Export(typeof(IDecoder))]
 	public class Decoder : IDecoder
 	{
 		private readonly Encoding _enc = Encoding.Unicode;

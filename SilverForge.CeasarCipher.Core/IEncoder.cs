@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace SilverForge.CeasarCipher.Core
+﻿namespace SilverForge.CeasarCipher.Core
 {
 	public interface IEncoder
 	{
