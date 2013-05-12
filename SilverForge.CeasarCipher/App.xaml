@@ -13,6 +13,7 @@
 				<ResourceDictionary Source="/FirstFloor.ModernUI;component/Assets/ModernUI.xaml" />
 				<ResourceDictionary Source="/FirstFloor.ModernUI;component/Assets/ModernUI.Light.xaml"/>
 				<ResourceDictionary Source="/WPFSmartLibraryLight35;component/ResourceDictionaries/CommonRD.xaml" />
+				<ResourceDictionary Source="/Styles/BaseStyles.xaml" />
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
